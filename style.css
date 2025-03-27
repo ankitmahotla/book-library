@@ -1,0 +1,193 @@
+* {
+  background-color: rgb(31, 29, 29);
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.navbar h1 {
+  flex-grow: 1;
+  margin-bottom: 0.5rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(51, 51, 51);
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-input {
+  border: none;
+  background-color: rgb(51, 51, 51);
+  font-size: 16px;
+  color: white;
+  width: 100%;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+/* List View Styles */
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  border: 2px solid rgb(75, 72, 72);
+  border-radius: 5px;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px 0px;
+}
+
+/* Grid View Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(75, 72, 72);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+.grid-img {
+  border-radius: 5px;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.grid-author {
+  color: rgb(170, 170, 170);
+  margin-bottom: 0.5rem;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.list-container {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-btn {
+  padding: 0.5rem 1rem;
+  background-color: rgb(51, 51, 51);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sort-select {
+  padding: 0.5rem 1rem;
+  background-color: rgb(51, 51, 51);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-btn:hover {
+  background-color: rgb(75, 72, 72);
+}
+
+/* Toggle between List and Grid View */
+.list-container {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.list-view .list-container {
+  display: flex;
+}
+
+.list-view .grid-container {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: rgb(75, 72, 72);
+}
+
+.pagination .page {
+  font-size: 1rem;
+  font-weight: bold;
+}
