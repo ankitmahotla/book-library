@@ -32,4 +32,4 @@ Use the Live Server extension in VSCode to run the project locally.
 
 ## Explore Online
 
-The deployed webpage can be explored here: [Book Library](https://book-library.example.com)
+The deployed webpage can be explored here: [Book Library](https://book-library-six-swart.vercel.app)
